@@ -86,7 +86,7 @@ class Pawn < Piece
     diag_moves = []
     self.class.attack_directions(self.color).each do |direction|
       new_pos = pos[0] + direction[0], pos[1] + direction[1]
-      next if Board.on_board(new_pos) && board[new_pos].nil?
+      next if !Board.on_board?(new_pos) || board[new_pos].nil?
 
       diag_moves << new_pos if board[new_pos].color != self.color
     end
