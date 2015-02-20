@@ -1,4 +1,5 @@
 require_relative "pieces.rb"
+require 'byebug'
 
 class SlidingPiece < Piece
 
@@ -39,7 +40,6 @@ class SlidingPiece < Piece
         stop_search = true
       end
     end
-
     moves_in_direction
   end
 
