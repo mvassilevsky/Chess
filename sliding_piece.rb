@@ -1,5 +1,4 @@
 require_relative "pieces.rb"
-require 'byebug'
 
 class SlidingPiece < Piece
 
