@@ -6,7 +6,7 @@ moved around with WASD.
 ## Instructions
 
 If you don't already have the Colorize gem, run ```bundle install``` in the root folder of this application.
-To play, run ```lib/chess.rb```.
+To play, run ```ruby lib/chess.rb```.
 
 ## Implementation
 
