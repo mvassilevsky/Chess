@@ -1,5 +1,3 @@
-require "colorize"
-
 class Board
 
   attr_reader :rows
@@ -111,9 +109,10 @@ class Board
 
   def move!(start_pos, end_pos)
     piece = self[start_pos]
-    dup_piece = piece.class.new(piece.pos, self, piece.color)
-    self[end_pos] = dup_piece
+    raise ArgumentError, "Can't move to this position" unless piece.moves.include?(end_pos)
+    self[end_pos] = piece
     self[start_pos] = nil
+    piece.pos = end_pos
 
     true
   end

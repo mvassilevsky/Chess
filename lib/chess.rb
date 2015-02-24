@@ -2,8 +2,8 @@ require_relative 'pieces'
 require_relative 'board'
 require_relative "stepping_piece"
 require_relative "sliding_piece"
-require_relative 'player'
-require 'colorize'
+require_relative "player"
+require "colorize"
 
 class Chess
 

@@ -3,6 +3,11 @@
 A simple command-line chess game written in Ruby. Pieces can be selected and
 moved around with WASD.
 
+## Instructions
+
+If you don't already have the Colorize gem, run ```bundle install``` in the root folder of this application.
+To play, run ```lib/chess.rb```.
+
 ## Implementation
 
 - chess.rb - launches the game and contains the main game loop
